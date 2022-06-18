@@ -24,7 +24,7 @@ var dailydrops = {
         boxcount: 6
     },
     "daily-side": {
-        task: "Синие побочные квеств",
+        task: "Синие побочные квесты",
         url: "#",
         short: true,
         desc: "До 5 {dust} за каждый квест. Не падает после 5-го",
@@ -56,7 +56,7 @@ var dailydrops = {
         boxcount: 5
     },
     "daily-zoltun": {
-        task: "Библиотека",
+        task: "Библиотека Золтуна Кулла",
         url: "#",
         short: true,
         desc: "До 5 {dust} для каждого уникального подземелья. Повторяющиеся подземелья не дают наград.",
