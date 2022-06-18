@@ -11,7 +11,7 @@ var dailydrops = {
         task: "Скрытое логово",
         url: "#",
         short: true,
-        desc: "6 {gems} камней в день",
+        desc: "6 {gems} в день",
         img: "gem",
         boxcount: 6
     },
