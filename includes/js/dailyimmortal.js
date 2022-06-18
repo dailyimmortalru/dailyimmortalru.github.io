@@ -480,7 +480,7 @@ const updateTimeContent = function(){
                     Math.floor(remainingtime % 3600 / 60), //m
                     Math.floor(remainingtime % 60) //s
                 ];
-                countdownElement.textContent ="Закроется через: " + (timeparts[1] > 0 ? (timeparts[1] + 'h ') : '') + timeparts[2] + 'm ' + timeparts[3] + 's';
+                countdownElement.textContent ="Закроется через: " + (timeparts[1] > 0 ? (timeparts[1] + 'ч ') : '') + timeparts[2] + 'м ' + timeparts[3] + 'с';
                 break;
             } else{
 
@@ -493,7 +493,7 @@ const updateTimeContent = function(){
                 ];
 
                 if(remainingtime > 0){
-                    countdownElement.textContent ="Откроется через: " + (timeparts[1] > 0 ? (timeparts[1] + 'h ') : '') + timeparts[2] + 'm ' + timeparts[3] + 's';
+                    countdownElement.textContent ="Откроется через: " + (timeparts[1] > 0 ? (timeparts[1] + 'ч ') : '') + timeparts[2] + 'м ' + timeparts[3] + 'с';
                     break;
                 }
                 else {
@@ -619,17 +619,17 @@ const countDown = function (timeFrame) {
     ];
 	
 	if (timeFrame == 'dailydrops'){
-        document.getElementById('th-countdown-' + timeFrame).innerHTML = (timeparts[0] > 0 ? (timeparts[0] + 'd ') : '') + (timeparts[1] > 0 ? (timeparts[1] + 'h ') : '') + timeparts[2] + 'm ' + timeparts[3] + 's';
+        document.getElementById('th-countdown-' + timeFrame).innerHTML = (timeparts[0] > 0 ? (timeparts[0] + 'д ') : '') + (timeparts[1] > 0 ? (timeparts[1] + 'ч ') : '') + timeparts[2] + 'м ' + timeparts[3] + 'с';
     }
 
     if (timeFrame == 'weeklies' || timeFrame == 'monthlies') {
-        document.getElementById('countdown-' + timeFrame).innerHTML = (timeparts[0] > 0 ? (timeparts[0] + 'd ') : '0d ') + (timeparts[1] > 0 ? (timeparts[1] + 'h ') : '') + timeparts[2] + 'm ' + timeparts[3] + 's';
-        document.getElementById('th-countdown-' + timeFrame).innerHTML = (timeparts[0] > 0 ? (timeparts[0] + 'd ') : '0d ') + (timeparts[1] > 0 ? (timeparts[1] + 'h ') : '') + timeparts[2] + 'm ' + timeparts[3] + 's';
+        document.getElementById('countdown-' + timeFrame).innerHTML = (timeparts[0] > 0 ? (timeparts[0] + 'д ') : '0d ') + (timeparts[1] > 0 ? (timeparts[1] + 'ч ') : '') + timeparts[2] + 'м ' + timeparts[3] + 'с';
+        document.getElementById('th-countdown-' + timeFrame).innerHTML = (timeparts[0] > 0 ? (timeparts[0] + 'д ') : '0d ') + (timeparts[1] > 0 ? (timeparts[1] + 'ч ') : '') + timeparts[2] + 'м ' + timeparts[3] + 'с';
     } 
     
     if (timeFrame == 'dailies') {
-        document.getElementById('countdown-' + timeFrame).innerHTML = (timeparts[0] > 0 ? (timeparts[0] + 'd ') : '') + (timeparts[1] > 0 ? (timeparts[1] + 'h ') : '') + timeparts[2] + 'm ' + timeparts[3] + 's';
-        document.getElementById('th-countdown-' + timeFrame).innerHTML = (timeparts[0] > 0 ? (timeparts[0] + 'd ') : '') + (timeparts[1] > 0 ? (timeparts[1] + 'h ') : '') + timeparts[2] + 'm ' + timeparts[3] + 's';
+        document.getElementById('countdown-' + timeFrame).innerHTML = (timeparts[0] > 0 ? (timeparts[0] + 'д ') : '') + (timeparts[1] > 0 ? (timeparts[1] + 'ч ') : '') + timeparts[2] + 'м ' + timeparts[3] + 'с';
+        document.getElementById('th-countdown-' + timeFrame).innerHTML = (timeparts[0] > 0 ? (timeparts[0] + 'д ') : '') + (timeparts[1] > 0 ? (timeparts[1] + 'ч ') : '') + timeparts[2] + 'м ' + timeparts[3] + 'с';
     }
 };
 
