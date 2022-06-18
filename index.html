@@ -65,7 +65,7 @@
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
 						   data-bs-toggle="dropdown" aria-expanded="false">
-							More Resources
+							Ссылки
 						</a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 							<h6 class="dropdown-header">Official</h6>
@@ -85,19 +85,19 @@
 					</li>
                     <li>
                         <div class="nav-icon-bar" title="Ежедневные Сброс">
-                            <i class="fa-solid fa-calendar-day nav-icon" title="Daily Reset"></i><b>Daily: </b><span
+                            <i class="fa-solid fa-calendar-day nav-icon" title="Daily Reset"></i><b>Ежедневные: </b><span
                                 id="countdown-dailies" class="countdown"></span>
                         </div>
                     </li>
                     <li>
                         <div class="nav-icon-bar" title="Еженедельные Сброс">
-                            <i class="fa-solid fa-calendar-week nav-icon" title="Weekly Reset"></i><b>Weekly: </b><span
+                            <i class="fa-solid fa-calendar-week nav-icon" title="Weekly Reset"></i><b>Еженедельные: </b><span
                                 id="countdown-weeklies" class="countdown"></span>
                         </div>
                     </li>
                     <li>
                         <div class="nav-icon-bar" title="Ежемесячные Сброс">
-                            <i class="fa-solid fa-calendar-week nav-icon" title="Weekly Reset"></i><b>Monthly: </b><span
+                            <i class="fa-solid fa-calendar-week nav-icon" title="Weekly Reset"></i><b>Ежемесячные: </b><span
                                 id="countdown-monthlies" class="countdown"></span>
                         </div>
                     </li>
@@ -105,7 +105,12 @@
                 <ul class="navbar-nav nav-pills ms-auto nav-right">
 					<li class="nav-item">
 						<select name="timezone" id="timezone" class="form-select" >
+						  <option value="10">North America (UTC-7)</option>
+						  <option value="7">North America (UTC-4)</option>
+						  <option value="6">South America (UTC-3)</option>
 						  <option value="1">Europe (UTC+2)</option>
+						  <option value="-7">Oceania (UTC+10)</option>
+						  <option value="-6">East Asia (UTC+9)</option>
 						</select>
                     </li>
 
@@ -258,7 +263,7 @@
         <tr draggable="true">
             <td class="activity_name" draggable="false">
                 <a target="_blank" rel="noopener noreferrer" draggable="false">Name</a>
-                <button class="hide-button expanding_button btn btn-danger btn-sm active">⊘<span class="expanding_text"> Hide</span>
+                <button class="hide-button expanding_button btn btn-danger btn-sm active">⊘<span class="expanding_text"> Скрыть</span>
                 </button>
             </td>
             <td class="activity_color">
