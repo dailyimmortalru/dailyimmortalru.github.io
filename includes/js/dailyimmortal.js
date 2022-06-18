@@ -493,7 +493,7 @@ const updateTimeContent = function(){
                 ];
 
                 if(remainingtime > 0){
-                    countdownElement.textContent ="Откроются через: " + (timeparts[1] > 0 ? (timeparts[1] + 'h ') : '') + timeparts[2] + 'm ' + timeparts[3] + 's';
+                    countdownElement.textContent ="Откроется через: " + (timeparts[1] > 0 ? (timeparts[1] + 'h ') : '') + timeparts[2] + 'm ' + timeparts[3] + 's';
                     break;
                 }
                 else {
